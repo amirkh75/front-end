@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title >
+        page title
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="keyword" content="HTML, CSS" />   <!-- keyword for search engines  -->
+</head>
+<body style="background-color: whitesmoke;">
+    <h2 title="it is a CV" style="color: darkcyan;"> its all about me.</h2>
+    <div style="color: cadetblue;">
+        <p>hi there :))))</p>
+        <br>
+        <p>it's me <a href="https://www.google.com/" target="_black">amir</a>.</p>
+    </div>
+    <div style="direction: rtl; color:  cadetblue;"> <!-- for direction of content (especially persion)-->
+        <p title="persion"> خوب سلام به همگی </p>
+    </div>
+    <div style="color: cadetblue;">
+        <h2> Lists </h2>
+        <p>ordered lists</p>
+        <h6> ol .</h6>   
+        <ol type="i">
+            <li>
+                Django
+            </li>
+            <li>
+                python
+            </li>
+            <li>
+                docker
+            </li>
+        </ol>
+        <h6> dl with descriptions. </h6> 
+        <dl style="direction: ltr;">
+            <dt> item 1 </dt>
+            <dd> descrption item 1</dd>
+            <dt> item 2</dt>
+            <dd> descrption item 2</dd>
+            <dt> item 3 </dt>
+            <dd> descrption item 3</dd>
+        </dl>
+        <hr>
+        <p>unordered lists</p>
+        <h6> ul .</h6>   
+        <ul style="list-style-type: armenian;">
+            <li>
+                Django
+            </li>
+            <li>
+                python
+            </li>
+            <li>
+                docker
+            </li>
+        </ul>
+    </div>
+    <form style="color: darkblue;" method="post" action="base-page.html"> <!-- after form submit redirect to action-->
+        <fieldset>
+            <legend>Personal informations</legend>
+            First name: <br>
+            <input type="text" name="firstname"><br>
+
+            Lirst name: <br>
+            <input type="text" name="lirstname"><br>
+
+            Education: <br>
+            <input type="radio" name="education" value="bsc"><br> Bsc. <br>
+            <input type="radio" name="education" value="msc"><br> Msc. <br>
+            <input type="radio" name="education" value="phd"><br> phd. <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <img src="World-Map.jpg" alt="image not find" width="300px" height="200px">
+    <img src="World-Map1.jpg" alt="image not find" width="300px" height="200px">
+    <img src="World-Map.jpg" style="width: 300px; height: auto;">
+    <h3>video</h3>
+    <video width="500px" height="300px" controls> <!--for auto play with no control write autoplay -->
+        <source src="videos/video1.mp4" type="video/mp4"> <!-- spaces in file name changes to "%20" -->
+        <source src="videos/video1.webm" type="video/webm"> <!-- if cant load or ride mp4 it goes for source 2-->
+        if cant play any one showes this alt.
+    </video>
+</body>
+</html>
