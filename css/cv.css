@@ -19,6 +19,7 @@ body {
 #leftsidebar {
   float: none;
   width: auto;
+  margin-top: 8%;
 }
 
 #menulist {
@@ -44,6 +45,8 @@ body {
   width: 120px;
   position: absolute;
   background: white;
+  animation-name: at-first;
+  animation-duration: 3s;
 }
 
 .socail-img:hover {
@@ -52,6 +55,8 @@ body {
 
 .socail-gif {
   width: 110px;
+  animation-name: at-first-gif;
+  animation-duration: 3s;
 }
 
 #contact {
@@ -74,6 +79,12 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+textarea {
+  background-image: url("../images/developer.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 
 .container {
@@ -85,24 +96,24 @@ input[type=text], select, textarea {
   margin-left: 20%;
   margin-top: 8%;
   margin-bottom: 8%;
-
 }
 
 #message-link {
   position: absolute;
-  margin-left: 2% ;
-  bottom: 2%;
+  margin-right: 2% ;
+  right: 8%;
+  bottom: 12%;
 }
 
 #button-message {
+  position: fixed;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 1%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin: 1% 1%;
   cursor: pointer;
 }
 
@@ -129,6 +140,15 @@ input[type=text], select, textarea {
   color: white;
 }
 
-
-
 /* #message-link:active  ~ #contact { display: block; } */
+
+
+@keyframes at-first {
+  from {width: 130px;}
+  to {width: 120px;}
+}
+
+@keyframes at-first-gif {
+  from {display: none;}
+  to {display: block;}
+}
