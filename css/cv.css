@@ -45,6 +45,7 @@ body {
   width: 120px;
   position: absolute;
   background: white;
+  z-index: 1;
   animation-name: at-first;
   animation-duration: 3s;
 }
@@ -55,8 +56,7 @@ body {
 
 .socail-gif {
   width: 110px;
-  animation-name: at-first-gif;
-  animation-duration: 3s;
+  z-index: -1;
 }
 
 #contact {
@@ -146,9 +146,4 @@ textarea {
 @keyframes at-first {
   from {width: 130px;}
   to {width: 120px;}
-}
-
-@keyframes at-first-gif {
-  from {display: none;}
-  to {display: block;}
 }
