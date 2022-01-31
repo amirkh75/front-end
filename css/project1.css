@@ -94,12 +94,6 @@ input[type=text], select, textarea {
       margin-bottom: 16px;
       resize: vertical;
 }
-textarea {
-    background-image: url("../images/developer.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
   
 .close {
     position: absolute;
@@ -131,6 +125,17 @@ textarea {
 
 .close:after {
     transform: rotate(-45deg);
+}
+#modal_wrapper-about div {
+    background-image: url("../images/developer.gif");
+    width: 35%;
+    height: 25%;
+    margin-left: 32%;
+    margin-right: 32%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2% 2%;
 }
 
 /*  end of modal */
