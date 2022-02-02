@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  صفحه وب من</title>
+        <meta charset="UTF-8"/>
+        <link href="css/project1.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navbar div -->
+        <div id="navbar">
+           <span class="span-navbar"><a href="#modal_wrapper-connect">connect with us</a></span>
+           <span class="span-navbar"><a href="#modal_wrapper-about">about us</a></span>
+           <span class="dropdown">
+               <a class="droplink" href="#dropdown-content-id">Menu</a>
+               <div id="dropdown-content-id"  class="dropdown-content">
+                   <a href="#section1">section1</a>
+                   <a href="#section2">section2</a>
+                   <a href="#section3">section3</a>
+                   <a href="#section4">section4</a>
+                   <a href="">close</a>
+               </div>
+           </span>
+        </div>
+        <!-- page up and down elements -->
+        <a id="jump_down"  href="#section4"></a>
+        <a id="jump_top" href="#about"></a>
+        <!-- modla  connect with us -->
+        <div id="modal_wrapper-connect" class="modal_wrapper">
+            <div class="modal" >
+                <a href="#" class="close"></a>
+                <h3 style="text-align: center;">Contact Form</h3>
+                <form action="#">
+                    <label for="fname">Email</label>
+                    <input type="text" id="fname" name="email" placeholder="email@email.com">
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <input id="submit-input" type="submit" value="send">
+                </form>
+            </div>
+        </div>
+        <!-- modla  about us -->
+        <div id="modal_wrapper-about" class="modal_wrapper">
+            <div class="modal" >
+                <a href="#" class="close"></a>
+                <form action="#">
+                    <label for="fname">About us</label>
+                    <p>its about us</p>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="content">
+            <!-- abou  -->
+            <div id="about">
+                <h1>About</h1>
+                this section is about <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                  </div>
+            </div>
+            <!-- midel page content -->
+            <div id="sections">
+                <div id="section1">
+                    Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
+                </div>
+                <div id="section2">
+                    Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
+                </div>
+                <div id="section3">
+                    Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
+                </div>
+                <div id="section4">
+                    Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
+                </div>
+            </div>
+            <!-- contact list -->
+            <div id="list">
+                <ul>
+                    <li>
+                        <a href="#section1">section1</a>
+                    </li>
+                    <li>
+                        <a href="#section2">section2</a>
+                    </li>
+                    <li>
+                        <a href="#section3">section3</a>
+                    </li>
+                    <li>
+                        <a href="#section4">section4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright 2022 &copy; <a href="http://www.maktabkhooneh.org" target="_blank">maktabkhooneh</a>
+        </div>
+    </body>
+</html>
