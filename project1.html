@@ -51,7 +51,7 @@
         <!--  -->
         <div class="content">
             <!-- abou  -->
-            <div id="about">
+            <div id="about" onclick="change_textp()">
                 <h1>About</h1>
                 this section is about <div class="tooltip">Hover over me
                     <span class="tooltiptext">Tooltip text</span>
@@ -62,7 +62,7 @@
                 <div id="section1">
                     Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
                 </div>
-                <div id="section2">
+                <div id="section2" onclick="flag_func()">
                     Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
                 </div>
                 <div id="section3">
@@ -91,8 +91,14 @@
             </div>
         </div>
 
-        <div id="footer">
+        <div id="footer" onclick="change_text()">
             Copyright 2022 &copy; <a href="http://www.maktabkhooneh.org" target="_blank">maktabkhooneh</a>
         </div>
     </body>
+    <script src="./js/project1.js"></script>
+    <script type="text/javascript">
+        function change_text() {
+            document.getElementById("footer").innerHTML = "hi!";
+        }
+    </script>
 </html>
