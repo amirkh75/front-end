@@ -209,7 +209,7 @@ input[type=text], select, textarea {
     width: 100%;
     background-color: rgba(11, 68, 126,0.7);
     padding-top: 20px;
-    margin-top: 5%;
+    margin-top: 25%;
     margin-bottom: 0%;
 }
 
@@ -301,8 +301,9 @@ input[type=text], select, textarea {
 
 #sections div:hover{
     animation-name: example;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
+    box-shadow: 10px 10px 5px rgb(14, 201, 7);
 }
 
 @keyframes example {
@@ -333,3 +334,31 @@ input[type=text], select, textarea {
     background-color: palegreen;
     font-size: 130%;
 }
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
