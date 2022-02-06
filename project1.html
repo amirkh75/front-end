@@ -25,7 +25,7 @@
         </div>
 
         <!-- slid background -->
-        <div class="slideshow-container" id="slideshow">
+        <div class="slideshow-container" id="slideshow" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
@@ -103,7 +103,7 @@
                 <div id="section1" class="sections_">
                     Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
                 </div>
-                <div id="section2" class="sections_" onclick="flag_func()">
+                <div id="sectfadeion2" class="sections_" onclick="flag_func()">
                     Computer science is the study of computation, automation, and information. Computer science spans theoretical disciplines, such as algorithms, theory of computation, and information theory, to practical disciplines including the design and implementation of hardware and software. Computer science is generally considered an area of academic research and distinct from computer programming. 
                 </div>
                 <div id="section3" class="sections_">
@@ -166,11 +166,22 @@
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
         }
-        
-        setInterval(function() {
-            slideIndex++;
-            showSlides(slideIndex);
-        }, 3000);
+        var interv = setInterval(function() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 3000);
+ 
+        function mouseEnter() {
+            clearInterval(interv);
+        }
+
+        function mouseLeave() {
+            setTimeout(1000);
+            interv = setInterval(function() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 3000);   
+        }
     </script>
 
 </html>
