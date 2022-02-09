@@ -16,27 +16,102 @@
 
 <nav class="autohide navbar navbar-expand-sm bg-warning navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
+    <form class="form-inline">
+      <button data-bs-toggle="modal" data-bs-target="#signup-modalForm" class="btn align-middle btn-primary" type="button">ثبت نام</button>
+      <button data-bs-toggle="modal" data-bs-target="#login-modalForm" class="btn align-middle btn-primary" type="button">ورود</button>
+    </form>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">تماس با ما</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">کاربران</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">محصولات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">درباره ما</a>
         </li>    
       </ul>
     </div>
   </div>
 </nav>
 
-
+<!-- sign up modal -->
+<!-- Modal -->
+<div class="modal fade" id="signup-modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">فرم ساخت اکانت</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label class="form-label">ادرس ایمیل</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">کلمه عبور</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">تکرار کلمه عبور</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                </div>
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberMe" />
+                      <label class="form-check-label" for="rememberMe">مرا به خاطر بسپار</label>
+                  </div>
+                  <div class="modal-footer d-block">
+                      <p class="float-start">قبلا اکانت ساخته ام <a data-bs-toggle="modal" data-bs-target="#login-modalForm" href="#">ورود</a></p>
+                      <button type="submit" class="btn btn-warning float-end">ارسال</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end of sign up modal -->
+<!-- login modal -->
+<!-- Modal -->
+<div class="modal fade" id="login-modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">فرم ورود</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label class="form-label">ادرس ایمیل</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">کلمه عبور</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                  </div>
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberMe" />
+                      <label class="form-check-label" for="rememberMe">مرا به خاطر بسپار</label>
+                  </div>
+                  <div class="modal-footer d-block">
+                      <p class="float-start">هنوز اکانت نساخته ام <a data-bs-toggle="modal" data-bs-target="#signup-modalForm" href="#">ساخت اکانت</a></p>
+                      <button type="submit" class="btn btn-warning float-end">ارسال</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end of sign up modal -->
 <div class="container-fluid mt-3">
   <h3>Collapsible Navbar</h3>
   <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
