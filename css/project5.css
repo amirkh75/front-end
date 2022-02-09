@@ -1,3 +1,15 @@
+body {
+  background-image: url('https://srilankafoundation.org/wp-content/uploads/2016/07/Beach.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 500px;
+}
+
+
+
+
+
+
 
 .autohide{
   position: fixed;

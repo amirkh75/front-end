@@ -28,7 +28,21 @@ document.addEventListener("DOMContentLoaded", function(){
       
   } // end of hide navbar in scrolling.
   
+  el_body = document.querySelector('body');
 
+  if(el_body){
+    var last_scroll_top = 0;
+    window.addEventListener('scroll', function() {
+          let scroll_top = window.scrollY;
+          if(scroll_top < 550) {
+            document.body.style.backgroundImage = "url('https://srilankafoundation.org/wp-content/uploads/2016/07/Beach.jpg')"; 
+          }
+          else {
+            document.body.style.backgroundImage = "url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp')"; 
+          }
+    }); 
+      
+  } // end of hide navbar in scrolling.
 }); 
   // DOMContentLoaded  end
 
