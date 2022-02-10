@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -16,7 +16,7 @@
 
 
 <!-- navbar -->
-<nav class="autohide navbar navbar-expand-sm bg-warning navbar-dark">
+<nav class="autohide navbar navbar-expand-sm bg-warning navbar-dark" dir="ltr">
   <div class="container-fluid">
     <form class="form-inline">
       <button data-bs-toggle="modal" data-bs-target="#signup-modalForm" class="btn align-middle btn-primary" type="button">ثبت نام</button>
@@ -84,7 +84,7 @@
 <!-- login modal -->
 <!-- Modal -->
 <div class="modal fade" id="login-modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg modal-sm">
       <div class="modal-content">
           <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">فرم ورود</h5>
@@ -128,7 +128,7 @@
 
 
 <!-- 4 icon for buy and .... -->
-<div class="container-fluid bg-white" style="margin-top: 300px; padding-bottom: 100px; padding-top: 100px;">
+<div class="container-fluid bg-white" style="margin-top: 300px;margin-bottom: 0; padding-bottom: 30px; padding-top: 100px;">
   <div class="row align-content-center" style="margin-left: 5%; margin-right:  5%; align-items: center ; text-align: center;">
     <div class="col-lg-3 col-sm-12 col-md-6"><p style="margin-top: 60px ;"><i class="bi-basket" style="font-size: 64px; color: green;"></i></p><p>کیف خرید شما</p><p style="margin-top: 60px ;">برای پیگیری خرید و ارسال خرید مراحل خرید را کامل کنید</p><p style="margin-bottom: 60px ;">محصولات مد نظرشما تا یک ماه در کیف خرید باقی می ماند</p></div>
     <div class="col-lg-3 col-sm-12 col-md-6"><p style="margin-top: 60px ;"><i class="bi-gift" style="font-size: 64px; color: palevioletred;"></i></p><p>ارسال هدیه به دوستان</p><p style="margin-top: 60px ;"> ارسال هدیه میتوانید بصورت ناشناس انجام شود</p><p style="margin-bottom: 60px ;">با ارسال هدیه دوستات خوشحال کن :)</p></div>
@@ -137,6 +137,15 @@
   </div>
 </div>
 
+<!-- about us text -->
+<div class="container-fluid bg-white"  style="margin-top: 0; padding-bottom: 100px; padding-top: 100px;">
+  <h1>درباره ما</h1>
+  <p>بر گرفته از respina.net</p>
+  <blockquote class="blockquote">
+    <p>افتن منابع موردنیاز در کم‌ترین زمان، مزیتی عمده برای محققان و دانشجویان به‌حساب می‌آید. برای مثال، اینترنت به محققان این امکان را می‌دهد تا با جامعه ی جهانی ارتباط برقرار کنند، که درنتیجه منبع بزرگتری به‌جهت جامعه‌ی آماری برای مطالعاتشان در‌دسترس خواهد بود. به‌علاوه، قابلیت استفاده از اینترنت برای مطالعات طولانی، محققان را قادر می‌سازد که داده‌ها و اطلاعاتشان را با‌سرعت زیادی گردآوری کنند و صرف‌نظر از موقعیت مکانی و جغرافیایی افراد و موضوعات مورد‌مطالعه‌شان به اطلاعات موردنیازشان دسترسی پیدا کنند.</p>
+    <footer class="blockquote-footer">https://respina.net/blog/author/a-babaei/</footer>
+  </blockquote>
+</div>
 
 
 <div class="container-fluid bg-white" style="margin-top: 300px; padding-bottom: 100px; padding-top: 100px;">
@@ -147,7 +156,7 @@
     <div class="col-lg-4 col-sm-12 col-md-12 item"><h2>دریا</h2>
       <p>ساحل شنی رودسر</p>                       
       <img id="img2" data-bs-toggle="modal" data-bs-target="#Modal-img" onclick="img_Function(this)" src="https://mdbootstrap.com/img/screens/yt/screen-video-5.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236"></div>
-    <div class="col-lg-4 col-sm-12 col-md-12 item"><h2>دریا چه</h2>
+    <div class="col-lg-4 col-sm-12 col-md-12 item"><h2>دریاچه</h2>
       <p>دریاچه و جنگل کلاردشت :)</p>            
       <img id="img3" data-bs-toggle="modal" data-bs-target="#Modal-img" onclick="img_Function(this)" src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236"></div>
   </div>
@@ -157,8 +166,6 @@
 <script>
   function img_Function(param) {
     var imgsrc = $(param).attr("src");
-    console.log("hiiiiiiiii")
-    console.log(imgsrc)
     $("#my_image").attr("src",imgsrc);
   }
 </script>
