@@ -43,6 +43,13 @@ document.addEventListener("DOMContentLoaded", function(){
     }); 
       
   } // end of hide navbar in scrolling.
+
+
+  
 }); 
   // DOMContentLoaded  end
 
+  // function img_Function() {
+    
+  //   $("#Modal-img").modal();
+  // }
