@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <title>Bootstrap Example</title>
+  <title>muntain</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="css/project5.css" type="text/css" rel="stylesheet">
   <script src="js/project5.js"></script>
+
+
+  <link rel="stylesheet" href="persian_cal/css/persianDatepicker-default.css" />
+  <script src="persian_cal/js/jquery.min.js" ></script>
+  <script src="persian_cal/js/persianDatepicker.min.js"></script>
 </head>
 <body>
 <div class="page-container">
@@ -209,9 +220,9 @@
 </div>
 
 <!-- SCIENTIFIC CALCULATOR -->
-<div class="container-fluid bg-white pt-3" dir="ltr">
+<div class="container-fluid bg-white p-3 align-content-center" dir="ltr">
   <div class="row">
-    <div class="col">
+    <div class="col-lg-3 col-sm-12 col-md-6 p-3 m-3 align-content-center">
       <!--
         TERMS OF USE
         BY USING THE CODE, YOU AGREE:
@@ -234,12 +245,90 @@
       <table><tr><td id="sciout"><div><div id="sciOutPut">0</div></div><div style="padding-top:3px;width:100%"><div><span onclick="r('sin')" class="scifunc">sin</span><span onclick="r('cos')" class="scifunc">cos</span><span onclick="r('tan')" class="scifunc">tan</span><span class="scird"><label for="scirdsettingd"><input id="scirdsettingd" type="radio" name="scirdsetting" value="deg" onClick="degreeRadians='degree';" checked>Deg</label><label for="scirdsettingr"><input id="scirdsettingr" type="radio" name="scirdsetting" value="rad" onClick="degreeRadians='radians';">Rad</label></span></div><div><span onclick="r('asin')" class="scifunc">sin<sup>-1</sup></span><span onclick="r('acos')" class="scifunc">cos<sup>-1</sup></span><span onclick="r('atan')" class="scifunc">tan<sup>-1</sup></span><span onclick="r('pi')" class="scifunc">&#960;</span><span onclick="r('e')" class="scifunc">e</span></div><div><span onclick="r('pow')" class="scifunc">x<sup>y</sup></span><span onclick="r('x3')" class="scifunc">x<sup>3</sup></span><span onclick="r('x2')" class="scifunc">x<sup>2</sup></span><span onclick="r('ex')" class="scifunc">e<sup>x</sup></span><span onclick="r('10x')" class="scifunc">10<sup>x</sup></span></div><div><span onclick="r('apow')" class="scifunc"><sup>y</sup>&#8730;x</span><span onclick="r('3x')" class="scifunc"><sup>3</sup>&#8730;x</span><span onclick="r('sqrt')" class="scifunc">&#8730;x</span><span onclick="r('ln')" class="scifunc">ln</span><span onclick="r('log')" class="scifunc">log</span></div><div><span onclick="r('(')" class="scifunc">(</span><span onclick="r(')')" class="scifunc">)</span><span onclick="r('1/x')" class="scifunc">1/x</span><span onclick="r('pc')" class="scifunc">%</span><span onclick="r('n!')" class="scifunc">n!</span></div></div><div style="padding-top:3px;"><div><span onclick="r(7)" class="scinm">7</span><span onclick="r(8)" class="scinm">8</span><span onclick="r(9)" class="scinm">9</span><span onclick="r('+')" class="sciop">+</span><span onclick="r('MS')" class="sciop">MS</span></div><div><span onclick="r(4)" class="scinm">4</span><span onclick="r(5)" class="scinm">5</span><span onclick="r(6)" class="scinm">6</span><span onclick="r('-')" class="sciop">&ndash;</span><span onclick="r('M+')" class="sciop">M+</span></div><div><span onclick="r(1)" class="scinm">1</span><span onclick="r(2)" class="scinm">2</span><span onclick="r(3)" class="scinm">3</span><span onclick="r('*')" class="sciop">&#215;</span><span onclick="r('M-')" class="sciop">M-</span></div><div><span onclick="r(0)" class="scinm">0</span><span onclick="r('.')" class="scinm">.</span><span onclick="r('EXP')" class="sciop">EXP</span><span onclick="r('/')" class="sciop">&#247;</span><span onclick="r('MR')" class="sciop">MR</span></div><div><span onclick="r('+/-')" class="sciop">&#177;</span><span onclick="r('RND')" class="sciop">RND</span><span onclick="r('C')" class="scieq">C</span><span onclick="r('=')" class="scieq">=</span><span onclick="r('MC')" class="sciop">MC</span></div></div></td></tr><tr><td id="calfootnote">powered by <a href="https://www.calculator.net" rel="nofollow">calculator.net</a></td></tr></table>
       <!--END OF SCIENTIFIC CALCULATOR CODE-->
     </div>
+    <div class="col-lg-3 col-sm-12 col-md-6 p-3 m-3 align-content-center">
+          <label for="persianDatapicker">تاریخ شروع : </label>
+          <input type="text" class="date-time" name="persianDatapicker" id="persianDatapicker" >
+    </div>
+
+    <div class="col-lg-3 col-sm-12 col-md-6 p-3 m-3 align-content-center">
+      <label for="persianDatapicker1"> تاریخ پایان : </label>
+      <input type="text" class="date-time" name="persianDatapicker" id="persianDatapicker1" >
+
+    </div>
+
   </div>
 </div>
 
+<!-- map -->
+<div class="iframe-container bg-white" style="text-align:center;">
+  <div class="row">
+    <div class="col-lg-2 col-sm-2 col-md-2 p-3 m-3 align-content-center"></div>
+    <div class="col-lg-8 col-sm-8 col-md-8 p-3 m-3 align-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d51847.121741957926!2d51.3052676!3d35.6906628!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x3f8dfe223aebcf05%3A0x6963cf218c774ad6!2sSa&#39;idi%20Expy%2C%20Tehran%20Province%2C%20Tehran%2C%20Iran!3m2!1d35.6906679!2d51.3402871!4m0!5e0!3m2!1sen!2s!4v1644587790551!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-lg-2 col-sm-2 col-md-2 p-3 m-3 align-content-center"></div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="bg-dark text-center text-white" style="margin: 0% 0%; padding: 0% 0%;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- goes up -->
+      <a href="#"><i class="glyphicon glyphicon-circle-arrow-up"></i></a> 
+
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </div>
+
+<script>
+  $(".date-time").persianDatepicker();
+</script>
+
 </body>
 </html>
