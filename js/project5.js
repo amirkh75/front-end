@@ -48,8 +48,3 @@ document.addEventListener("DOMContentLoaded", function(){
   
 }); 
   // DOMContentLoaded  end
-
-function img_Function(param) {
-  var imgsrc = $(param).attr("src");
-  $("#my_image").attr("src",imgsrc);
-}
